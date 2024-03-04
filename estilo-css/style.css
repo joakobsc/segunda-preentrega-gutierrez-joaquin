@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Mulish:wght@500&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Mulish', sans-serif; */
+
+
+
+/* Estilos Generales */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background-color: rgba(21, 21, 21, 0.95);
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 10vh;
+}
+/* END: Estilos generales */
+
+
+
+/* Index: mobile first */
+.header-index{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  height: 48vh;
+  width: 100vw;
+  background-image: url(../multimedia/fondo-index.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 7%;
+}
+.superior{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(14, 14, 14, 0.75);
+  position: relative;
+  width: 100vw;
+  padding: 0 10px;
+  z-index: 1;
+}
+.logo{
+  height: 7vh;
+}
+.logo img{
+  height: 7vh;
+}
+.navbar a{
+  color: #ffffff;
+  font-size: 1.6vh;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar a:hover{
+  color: #C99383;
+}
+
+.titulo-secundario h1{
+  font-size: 2.8vw;
+  letter-spacing: 0.1vw;
+  color: rgb(20, 17, 17);
+}
+
+
+.segundo-nav{
+  background-color: rgba(14, 14, 14, 0.911);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 6vh;
+}
+.segundo-nav ul{
+  margin: 0;
+  padding: 0;
+}
+.segundo-nav ul li{
+  display: inline-block;
+  list-style: none;
+  padding: 0 4vw 0 4vw;
+}
+.segundo-nav a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.6vh;
+}
+
+.segundo-nav a:hover{
+  color: #C99383;
+}
+
+.galeria{
+  display: grid;
+  grid-template-columns: repeat(2, 50vw);
+  grid-template-rows:repeat(3,auto );
+  background-color: rgb(14, 14, 14, 1);
+  width: 100vw;
+}
+
+  .galeria img{
+    width: 50vw;
+  }
+   
+  .map iframe{
+    width: 100vw;
+    height: 30vh;
+    padding: 5vh 2vw;
+  }
+/* footer general mobile first */
+footer{
+  background-color: rgba(14, 14, 14, 1);
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.copyright{
+  color: #ffffff;
+  font-family: 'monserrat';
+}
+
+.copyright p{
+  font-size: 2.2vw;
+  margin: 0;
+  padding: 0;
+}
+
+.redes{
+  display: inline-block;
+}
+
+.redes i{
+    color:#ffffff;
+    font-size: 3.9vw;
+    letter-spacing: 1.2vw; 
+}
+/* ------------------------------------------- */
+
+/* END: index Mobile first */
+
+/* Contacto: mobile first */
+
+.container-contacto{
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+.header-contacto{
+  width: 100vw;
+  height: 40vh;
+  background-image: url(../multimedia/Img-contacto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.formularios p{
+  font-size: 3vw;
+  color: white;
+  padding: 3vw 4vw;
+  text-indent: 5vw;
+}
+.formularios h1{
+  font-size: 6vw;
+  color: white;
+  padding: 3vw 4vw;
+}
+.comentarios{
+  display: block;
+}
+.comentarios h3{
+  font-size: 4vw;
+  color: white;
+  padding: 3vw 4vw;
+}
+
+#textarea-contacto
+{
+  height: 20vh;
+  width: 90vw ;
+  resize: none;
+  overflow: auto;
+  background-color: #0e0e0e;
+  color: #ffffff;
+  font-size: 3vw;
+  margin: 3vw;
+  padding-left: 3vw;
+}
+
+input{
+  margin: 1vw 3vw 3vw 3vw;
+  font-size: 3vw;
+  border-radius: 0.5vh;
+  border: rgba(14, 14, 14, 0.678) solid 2px; 
+}
+.enviar{
+  color: rgba(0, 0, 0, 0.5);
+  background-color: #C99383;
+  font-size: 3vw;
+  width: 35vw;
+  height: 5vh;
+  border-radius: 2vh;
+  border: rgba(14, 14, 14, 0.5) solid 2px;
+}
+
+/* Emprendimiento: mobile first */
+#Nuestro-Próximo-Gran-Proyecto{
+  color: #f5f4f4;
+  font-size: 5vw;
+  text-align: center;
+  padding: 2vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.gran-proyecto{
+  width:100vw;
+  min-height:55vh;
+  display: grid;
+  grid-template-columns: repeat(2, 50vw);
+  grid-template-rows: repeat(3, 1fr );
+}
+
+.item{
+  border: #C99383 solid 2px;
+}
+
+.item1{
+  background-image: url(../multimedia/proyecto-i-hd.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.item2{
+  background-image: url(../multimedia/proyecto-iv-hd.jpg);
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.item3{
+  background-image: url(../multimedia/proyecto-iii-hd.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.item4{
+  background-image: url(../multimedia/proyecto-ii-hd.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+/* END: Emprendimiento mobile first */
+
+/* Hotelería: mobile first */
+
+.turismo{
+  background-image: url(../multimedia/fondo-montaña.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cartas{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-content: space-evenly;
+  height: 150vh;
+}
+.card{
+  width: 100vw;
+}
+.nuestros-hoteles{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.nuestros-hoteles h1{
+  color: #f5f4f4;
+  background-color: #1a191994;
+  border-radius: 10px;
+  width: 85vw;
+  font-size: 8vw;
+  padding: 1vw 0vw;
+  margin-top: 3vw;
+  text-align: center;
+}
+.nuestros-hoteles h2{
+  color: #0c0c0c;
+  background-color: rgba(255, 255, 255, 0.548);
+  border-radius: 10px;
+  width: 80vw;
+  padding: 1vw 0px;
+  text-align: center;
+  font-size: 5vw;
+  margin-top: 3vw;
+}
+
+/*END: Hotelería mobile first */
+
+/* Nosotros: mobile first*/
+
+.container-nosotros{
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+.header-nosotros{
+  width: 100vw;
+  height: 55vh;
+  background-image: url(../multimedia/Img-Nosotros.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.descripcion{
+  width: 100vw;
+  color: #f5f4f4;
+  padding: 8vw;
+}
+.descripcion p{
+  text-indent: 5vw;
+  font-size: 2vw;
+  padding-top: 2.1vh;
+}
+
+/* Responsive for index */
+@media only screen and (min-width:1200px) {
+  .galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .galeria img{
+    width: 33vw;
+  }
+}
+@media only  screen and (min-width: 1024px) and (max-height:1365px){
+/* para el nav general */
+  .superior{
+    padding: 0px 100px;
+  }
+
+  .logo{
+    height: 90px;  
+  }
+  .logo img{
+    height: 98%;
+  }
+  /*---------------------  */
+  .header-index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image:url(../multimedia/fondo-index.jpg) ;
+    width: 100vw;
+    height: 55vw;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 5%;
+  }
+  
+  .titulo-secundario h1{
+    font-size: 1.6vw;
+  }
+/* para el footer general */
+  .copyright p{
+    font-size: 2vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  .redes i{
+    color:#ffffff;
+    font-size: 3vh;
+    letter-spacing: 3vw; 
+}
+/* ------------------------ */
+/* END: Responsive for index */
+
+/* Rensponsive for Contacto */
+.header-contacto{
+  background-image: none;
+  height: 0vh;
+}
+.container-contacto{
+  margin-top: 15vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.banner-contacto{
+  width: 40vw;
+  height: 50vh ;
+  background-image: url(../multimedia/Img-contacto.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.formularios{
+  width: 55vw;
+}
+
+.formularios h1{
+  font-size: 5vh;
+  color: white;
+  padding: 6vh 0vh 4vh 6vh ;
+}
+
+.formularios p{
+  font-size: 1.7vh;
+  color: white;
+  padding: 1vh 1vh 1vh 1vh;
+}
+.comentarios h3{
+  font-size: 3.5vh;
+  color: white;
+  padding: 0vh 4vw;
+  text-align: center;
+}
+
+#textarea-contacto
+{
+  height: 30vh;
+  width: 90vw ;
+  resize: none;
+  overflow: auto;
+  background-color: #0e0e0e;
+  color: #ffffff;
+  font-size: 1.7vh;
+  margin: 3vw;
+  padding-left: 3vw;
+}
+
+input{
+  margin: 1vw 2vw 2vw 2vw;
+  font-size: 1.1vw;
+  border-radius: 0.5vh;
+  border: rgba(14, 14, 14, 0.678) solid 2px; 
+}
+.enviar{
+  color: rgba(0, 0, 0, 0.5);
+  background-color: #C99383;
+  font-size: 1vw;
+  width: 10vw;
+  height: 8vh;
+  border-radius: 2vh;
+  border: rgba(14, 14, 14, 0.5) solid 2px;
+}
+/* END: Responsive for contacto */
+
+/* Responsive for Nosotros */
+
+  .header-nosotros{
+    background-image: none;
+    height: 0vh;
+  }
+
+  .container-nosotros{
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+
+  .banner{
+    width: 45vw;
+    height: 100vh;
+    background-image: url(../multimedia/Img-Nosotros.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .descripcion{
+  width: 55vw;
+  color: #f5f4f4;
+  padding: 6vw;
+  }
+  .descripcion h1{
+    font-size: 3vw;
+    padding-left: 1vw;
+    padding-top: 5vh;
+  }
+  .descripcion p{
+  font-size: 0.85vw;
+  padding-bottom: 0;
+  }
+/* END: Responsive for Nosotros */
+}
+
+/* Responsive for Emprendimientos */
+@media only screen and (min-width: 480px){
+  .gran-proyecto{
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .item1{
+    grid-column: 1/3;
+    grid-row: 1/4;
+  }
+  .item2{
+    grid-column: 1/2;
+    grid-row: 3/5;
+  }
+  .item3{
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
+  .item4{
+    grid-column: 1/3;
+    grid-row: 5/7;
+  }
+  
+}
+
+@media only screen and (min-width:1024px) {
+  #Nuestro-Próximo-Gran-Proyecto{
+    font-size: 5vh;
+  }
+  .gran-proyecto{
+    height: 100vh;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .item1{
+    background-image: url(../multimedia/proyecto-i-hd.jpg);
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .item2{
+    background-image: url(../multimedia/proyecto-iv-hd.jpg);
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .item3{
+    background-image: url(../multimedia/proyecto-iii-hd.jpg);
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .item4{
+    background-image: url(../multimedia/proyecto-ii-hd.jpg);
+    background-position: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  /* END: Responsive for Emprendimientos */
+
+
+  /* Responsive for Hoteleria */
+
+  .cartas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-content: flex-start;
+    height: 60%;
+    padding-bottom: 8vh;
+  }
+  .card{
+    width: 100vw;
+  }
+  .nuestros-hoteles h1{
+    color: #f5f4f4;
+    background-color: #1a191994;
+    border-radius: 60px;
+    width: 65vw;
+    font-size: 5vw;
+    padding: 1vw 0vw;
+    margin-top: 3vw;
+    text-align: center;
+  }
+  .nuestros-hoteles h2{
+    color: #0c0c0c;
+    background-color: rgba(255, 255, 255, 0.548);
+    border-radius: 60px;
+    width: 60vw;
+    padding: 1vw 0px;
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  }
+}
