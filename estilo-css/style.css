@@ -159,7 +159,7 @@ footer{
 .header-contacto{
   width: 100vw;
   height: 40vh;
-  background-image: url(../multimedia/Img-contacto.jpg);
+  background-image: url(../multimedia/img-contacto.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -318,7 +318,7 @@ input{
 .header-nosotros{
   width: 100vw;
   height: 55vh;
-  background-image: url(../multimedia/Img-Nosotros.jpg);
+  background-image: url(../multimedia/img-nosotros.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -407,7 +407,7 @@ input{
 .banner-contacto{
   width: 40vw;
   height: 50vh ;
-  background-image: url(../multimedia/Img-contacto.jpg);
+  background-image: url(../multimedia/img-contacto.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -482,7 +482,7 @@ input{
   .banner{
     width: 45vw;
     height: 100vh;
-    background-image: url(../multimedia/Img-Nosotros.jpg);
+    background-image: url(../multimedia/img-nosotros.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
