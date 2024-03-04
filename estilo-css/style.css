@@ -100,19 +100,49 @@ body{
   display: grid;
   grid-template-columns: repeat(2, 50vw);
   grid-template-rows:repeat(3,auto );
-  background-color: rgb(14, 14, 14, 1);
+  padding: 0.5vh;
+  grid-gap: 0.5vh;
   width: 100vw;
+  height: 60vh;
+}
+.item5{
+  background-image: url(../multimedia/quincho.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.item6{
+  background-image: url(../multimedia/living-comedor.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.item7{
+  background-image: url(../multimedia/patio-suite.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item8{
+  background-image: url(../multimedia/baño.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item9{
+  background-image: url(../multimedia/parrilla.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item10{
+  background-image: url(../multimedia/cocina.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-  .galeria img{
-    width: 50vw;
-  }
-   
-  .map iframe{
+.map iframe{
     width: 100vw;
     height: 30vh;
     padding: 5vh 2vw;
-  }
+}
 /* footer general mobile first */
 footer{
   background-color: rgba(14, 14, 14, 1);
@@ -271,26 +301,32 @@ input{
 
 .cartas{
   display: flex;
-  flex-wrap: wrap;
-  justify-content:center;
-  align-content: space-evenly;
-  height: 150vh;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
 }
 .card{
-  width: 100vw;
+ margin: 1.5vh;
+ text-align: center;
+}
+.card-title{
+  font-size: 2vh ;
+}
+.btn-primary{
+  font-size: 1.5vh;
 }
 .nuestros-hoteles{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .nuestros-hoteles h1{
   color: #f5f4f4;
   background-color: #1a191994;
   border-radius: 10px;
-  width: 85vw;
-  font-size: 8vw;
+  width: 60vw;
+  font-size: 6vw;
   padding: 1vw 0vw;
   margin-top: 3vw;
   text-align: center;
@@ -299,10 +335,10 @@ input{
   color: #0c0c0c;
   background-color: rgba(255, 255, 255, 0.548);
   border-radius: 10px;
-  width: 80vw;
+  width: 65vw;
   padding: 1vw 0px;
   text-align: center;
-  font-size: 5vw;
+  font-size: 3vw;
   margin-top: 3vw;
 }
 
@@ -334,14 +370,11 @@ input{
 }
 
 /* Responsive for index */
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width:1024px) and (max-height: 1000px){
   .galeria{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-  }
-  .galeria img{
-    width: 33vw;
   }
 }
 @media only  screen and (min-width: 1024px) and (max-height:1365px){
@@ -527,7 +560,7 @@ input{
   
 }
 
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width:1024px){
   #Nuestro-Próximo-Gran-Proyecto{
     font-size: 5vh;
   }
@@ -559,39 +592,24 @@ input{
 
   /* END: Responsive for Emprendimientos */
 
+}
 
   /* Responsive for Hoteleria */
+@media only screen and (min-width: 720px){
+  .cartas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
 
+@media only screen and (min-width: 1024px) and (max-height: 1080px){
   .cartas{
     display: flex;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    align-content: flex-start;
-    height: 60%;
-    padding-bottom: 8vh;
-  }
-  .card{
-    width: 100vw;
-  }
-  .nuestros-hoteles h1{
-    color: #f5f4f4;
-    background-color: #1a191994;
-    border-radius: 60px;
-    width: 65vw;
-    font-size: 5vw;
-    padding: 1vw 0vw;
-    margin-top: 3vw;
-    text-align: center;
-  }
-  .nuestros-hoteles h2{
-    color: #0c0c0c;
-    background-color: rgba(255, 255, 255, 0.548);
-    border-radius: 60px;
-    width: 60vw;
-    padding: 1vw 0px;
-    text-align: center;
-    font-size: 2vw;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
   }
 }
