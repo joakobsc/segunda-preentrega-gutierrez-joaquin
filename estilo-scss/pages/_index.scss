@@ -1,0 +1,119 @@
+body{
+    .header-index{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        height: 48vh;
+        width: 100vw;
+        background-image: url(../multimedia/fondo-index.jpg);
+        @extend %background-image;
+        padding-bottom: 7%;
+        section{
+            .titulo-secundario{
+                h1{
+                    font-size: 2.8vw;
+                    letter-spacing: 0.1vw;
+                    color: map-get($colores,color-texto-secundario);
+                }
+            }
+        }
+    }
+    main{
+      .segundo-nav {
+        background-color: rgba(14, 14, 14, 0.911);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 6vh;
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                display: inline-block;
+                list-style: none;
+                padding: 0 4vw 0 4vw;
+                a {
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-size: 1.6vh;
+                    &:hover {
+                        color: #C99383;
+                    }
+                }
+            }
+        }
+    }
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(2, 50vw);
+        grid-template-rows:repeat(3,auto );
+        padding: 0.5vh;
+        grid-gap: 0.5vh;
+        width: 100vw;
+        height: 60vh;
+        .item5{
+            background-image: url(../multimedia/quincho.png);
+            @extend %background-image;
+            transition: $transition-image;
+            &:hover{
+              transform: scale($scale-image);
+            }
+          }
+          .item6{
+            background-image: url(../multimedia/living-comedor.png);
+            @extend %background-image;
+            transition: $transition-image;
+            &:hover{
+              transform: scale($scale-image);
+            } 
+          }
+          .item7{
+            background-image: url(../multimedia/patio-suite.png);
+            @extend %background-image;
+            transition: $transition-image;
+            &:hover{
+              transform: scale($scale-image);
+            }
+          }
+          .item8{
+            background-image: url(../multimedia/baño.jpeg);
+            @extend %background-image;
+            transition: $transition-image;
+            &:hover{
+              transform: scale($scale-image);
+            }
+          }
+          .item9{
+            background-image: url(../multimedia/parrilla.jpeg);
+            @extend %background-image;
+            transition: $transition-image;
+            &:hover{
+              transform: scale($scale-image);
+            }
+          }
+          .item10{
+            background-image: url(../multimedia/cocina.jpeg);
+            @extend %background-image;
+            transition: $transition-image;
+            &:hover{
+              transform: scale($scale-image);
+            }
+          }  
+      }
+      .map{
+        iframe{
+            width: 100vw;
+            height: 30vh;
+            padding: 5vh 2vw;
+        }
+      }
+    }
+}
+
+
+      
+
+  
+  

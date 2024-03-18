@@ -1,0 +1,30 @@
+/* Nosotros: mobile first*/
+body{
+    .header-nosotros{
+        width: 100vw;
+        height: 55vh;
+        background-image: url(../multimedia/img-nosotros.jpg);
+        @extend %background-image;
+        background-position: right;
+    }
+    main{
+        .container-nosotros{
+            width: 100vw;
+            display: flex;
+            flex-wrap: wrap;          
+            .descripcion{
+                width: 100vw;
+                color: #f5f4f4;
+                padding: 8vw;
+                h1{
+                    font-size: 5vw;
+                }
+                p{
+                    text-indent: 5vw;
+                    font-size: 2vw;
+                    padding-top: 2.1vh;
+                }
+            }
+        }
+    }
+}

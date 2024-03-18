@@ -1,0 +1,26 @@
+/*Hotelería responsive*/
+@media only screen and (min-width: 720px){
+    .turismo{
+        main{
+            .cartas{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                justify-items: center;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1024px) and (max-height: 1080px){
+    .turismo{
+        main{
+            .cartas{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+                align-items: flex-start;
+            }
+        }
+    }
+}

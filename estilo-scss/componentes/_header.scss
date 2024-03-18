@@ -1,0 +1,26 @@
+.superior {
+  display: flex;
+  justify-content: space-between;
+  background-color: map-get($colores, color-navbar);
+  position: relative;
+  width: 100vw;
+  padding: 0 10px;
+  z-index: 1;
+  .logo{
+    height: 7vh;
+    img{
+        height: 7vh;
+    }
+  }
+  .navbar{
+    a{
+        color: map-get($colores, color-texto);
+        font-size: 1.6vh;
+        font-weight: bold;
+        text-decoration: none;
+        &:hover{
+            color: map-get($colores, color-hover);
+        }
+    }
+  }
+}

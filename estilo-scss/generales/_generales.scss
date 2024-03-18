@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: map-get($colores, color-fondo);
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 10vh;
+}

@@ -1,0 +1,44 @@
+@keyframes brillar{
+    0%{
+        color: #fff3;
+        background-color: transparent;
+        border-radius: 2vh;
+        border: #fff3 solid 2px;
+    }
+    15%{
+        border-color: map-get($colores, color-hover);
+        color: map-get($colores, color-hover);
+        box-shadow: 0px 0px 10px #ca7c64, 0px 0px 16px #c98976;
+        text-shadow: 0px 0px 2px #ca7c64;
+    }
+    30%{
+        color: #fff3;
+        background-color: transparent;
+        border-radius: 2vh;
+        border: #fff3 solid 2px
+    }
+    45%{
+        border-color: map-get($colores, color-hover);
+        color: map-get($colores, color-hover);
+        box-shadow: 0px 0px 10px #ca7c64, 0px 0px 16px #c98976;
+        text-shadow: 0px 0px 2px #ca7c64;
+    }
+    60%{
+        color: #fff3;
+        background-color: transparent;
+        border-radius: 2vh;
+        border: #fff3 solid 2px;
+    }
+    75%{
+        border-color: map-get($colores, color-hover);
+        color: map-get($colores, color-hover);
+        box-shadow: 0px 0px 10px #ca7c64, 0px 0px 16px #c98976;
+        text-shadow: 0px 0px 2px #ca7c64;
+    }
+    100%{
+        color: #fff3;
+        background-color: transparent;
+        border-radius: 2vh;
+        border: #fff3 solid 2px;
+    }
+}

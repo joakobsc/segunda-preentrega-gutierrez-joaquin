@@ -1,0 +1,5 @@
+@mixin background-mQ ($size, $repeat, $position){
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: $position;
+}

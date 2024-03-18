@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Mulish:wght@500&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Mulish', sans-serif; */
+@import 'generales/maps';
+@import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'generales/generales';
+@import 'componentes/header';
+@import 'utilities/extends';
+@import 'utilities/animation/animation-button.scss';
+@import 'pages/index';
+@import 'pages/contacto';
+@import 'pages/emprendimientos';
+@import 'pages/hotelería';
+@import 'pages/nosotros';
+@import 'componentes/footer';
+@import 'utilities/mediaqueries/mediaquery-nav-footer';
+@import 'utilities/mediaqueries/mediaquery-index';
+@import 'utilities/mediaqueries/mediaquery-contacto';
+@import 'utilities/mediaqueries/mediaquery-emprendimientos';
+@import 'utilities/mediaqueries/mediaqueries-hotelería';
+@import 'utilities/mediaqueries/_mediaquery-nosotros';

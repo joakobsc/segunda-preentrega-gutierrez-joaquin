@@ -1,0 +1,54 @@
+/*hoteleria mobile first*/
+.turismo{
+    background-image: url(../multimedia/fondo-montaña.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    main{
+        .nuestros-hoteles{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;          
+            h1{
+                color: map-get($colores, color-texto);
+                background-color: rgba(26, 25, 25, 0.5803921569);
+                border-radius: 10px;
+                width: 60vw;
+                font-size: 6vw;
+                padding: 1vw 0vw;
+                margin-top: 3vw;
+                text-align: center;
+            }
+            h2{
+                color: #0c0c0c;
+                background-color: rgba(255, 255, 255, 0.548);
+                border-radius: 10px;
+                width: 65vw;
+                padding: 1vw 0px;
+                text-align: center;
+                font-size: 3vw;
+                margin-top: 3vw;
+            }
+        }
+        .cartas{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            .card{
+                margin: 1.5vh;
+                text-align: center;
+                .card-body{
+                    .card-title{
+                        font-size: 2vh;
+                    }
+                    .a{
+                        .btn-primary{
+                            font-size: $button-card;
+                        }
+                    }
+                }    
+            }
+        }
+    }
+}
